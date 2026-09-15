@@ -319,7 +319,7 @@ export default function Home() {
     applyFocusStyles(viewport.current, position.current);
     audio.current?.play('csgo_ui_crate_open');
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const duration = reduced ? 150 : profile.durationMs;
+    const duration = 6000;
     const started = performance.now();
     let renderedStart = visibleStart;
     let lastCell = Math.floor((start - width / 2) / step);
